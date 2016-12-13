@@ -3,8 +3,7 @@
 #include<iostream>
 #include <cstdlib>
 #include"sqlite3.h"
-#include<string>
-#include <functional>
+#include<string>#include <functional>
 using namespace std;
 bool b;
 

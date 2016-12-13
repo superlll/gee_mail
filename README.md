@@ -1,30 +1,22 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# geemail
+here are some instuctions about the geemail.
+this is a secure asynchronous message platform. 
+Here is what is do: When loaded prompt the user to sign-in or register.
+When a user registers get their username and password.
+When a user logs in ask for username and validate password. 
+If login fails, it would response the unsuccess 
+Once logged in, it can tell you the number of messages you have, 
+list the users that have sent them a message. 
+
+myregister.cpp have the function that it can register username and password.
+
+mylogin.cpp can log in the user you just register
 
 
-Hi there! Welcome to Cloud9 IDE!
 
-To get you started with C/C++, we have created some small hello world
-applications and a Makefile.
-
-Have a look at the files, and use the terminal to build them:
-
-    $ make
-    $ ./hello-c-world
-    $ ./hello-cpp-world
-
-We're sure you can take it from there. Go ahead and edit the code, 
-or add some new files. It's all up to you! 
-
-Happy coding!
-The Cloud9 IDE team
-
+how to compile the code:
+ g++ -std=c++11 myregister.cpp -lsqlite3 -lgcrypt
+ g++ -std=c++11 mylogin.cpp -lsqlite3 -lgcrypt
+ ./a.out
 
 ## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
